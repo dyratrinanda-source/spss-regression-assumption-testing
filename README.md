@@ -21,8 +21,8 @@ Kolmogorov-Smirnov normality test, multiple regression, residual normality test,
 | Heteroscedasticity | Glejser p > 0.05 for all predictors |
 | Autocorrelation | Durbin-Watson = 2.19 |
 
-![Standardized effects](images/spss_cover.png)
-![Residual diagnostics](images/spss_diagnostics.png)
+![Standardized effects](spss_cover.png)
+![Residual diagnostics](spss_diagnostics.png)
 
 ## Files
 - `data/`: the `.sav` datasets
