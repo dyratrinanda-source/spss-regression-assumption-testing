@@ -1,33 +1,33 @@
-# Data Analyst Portfolio
+# Regression Assumption Testing with SPSS
 
-Hi, I'm **Anavadya Dyra Trinanda**, a junior data analyst and Information Systems graduate (GPA 3.57, Cum Laude) from Universitas Komputer Indonesia. I use SQL, Python, Excel, and SPSS to turn data into findings a team can act on.
+Multiple regression on a course practice dataset (20 observations), with every classical assumption checked before interpreting the model.
 
-**Portfolio website:** [add your published Notion link here]
+> The datasets here are course practice data. Results illustrate the method, not real-world conclusions.
 
-## Projects
+## Question
+Which of beef price, flour price, and machine performance explain burger price, and does the model meet the classical regression assumptions?
 
-| Project | What it shows | Tools |
-|---|---|---|
-| [Notary Office Operations Analysis](https://github.com/dyratrinanda-source/sistem-manajemen-kantor-notaris) | Finds where services slow down in a notary workflow (simulated data) | MySQL, CTEs, window functions |
-| [Video Game Sales by Region](./python-video-game-sales) | Compares average sales per genre across four regions | Python, Pandas, Matplotlib |
-| [Regression Assumption Testing](./spss-regression-assumption-testing) | Multiple regression with full classical assumption checks (course practice data) | SPSS (via PSPP) |
-| [Excel Practice Exercises](./excel-practice-exercises) | 24 exercises: lookups, pivot tables, conditional aggregation | Excel |
+## Method
+Kolmogorov-Smirnov normality test, multiple regression, residual normality test, VIF (multicollinearity), Glejser test (heteroscedasticity), and Durbin-Watson (autocorrelation).
 
-## Skills
+## Results
 
-- **SQL:** CTEs, window functions, joins, aggregation (MySQL, BigQuery)
-- **Python:** Pandas, Matplotlib, descriptive statistics
-- **Excel:** pivot tables, VLOOKUP/HLOOKUP, SUMIFS/COUNTIF, database functions
-- **SPSS:** regression, t-tests, non-parametric tests, assumption testing
+| Check | Result |
+|---|---|
+| Model fit | R² = 0.42, F(3, 16) = 3.90, p = 0.029 |
+| Significant predictor | Machine performance (B = -1.31, p = 0.014) |
+| Normality of residuals | K-S p ≈ 0.60 |
+| Multicollinearity | VIF 1.02 to 1.24 |
+| Heteroscedasticity | Glejser p > 0.05 for all predictors |
+| Autocorrelation | Durbin-Watson = 2.19 |
 
-## Certifications
+![Standardized effects](images/spss_cover.png)
+![Residual diagnostics](images/spss_diagnostics.png)
 
-- Data Analyst, DSAREA (Grade A), Oct to Nov 2026
-- Registered copyright (HAKI) for a computer program, Ministry of Law of Indonesia, 2026
-- Gemini Certified Student, Google for Education
-- TOEFL ITP 543
+## Files
+- `data/`: the `.sav` datasets
+- `output/`: PSPP/SPSS output files, numbered 1 to 7 (frequencies, t-tests, non-parametric tests, logistic regression, path analysis, multiple regression, assumption testing)
+- `images/`: charts used on the portfolio page
 
-## Contact
-
-- Email: dyratrinanda@gmail.com
-- LinkedIn: https://www.linkedin.com/in/anavadya-dyra-trinanda
+## Tools
+SPSS-compatible output created with GNU PSPP. Open `.sav` and `.spv` files in PSPP or SPSS.
