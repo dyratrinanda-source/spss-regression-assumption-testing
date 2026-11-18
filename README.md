@@ -25,9 +25,9 @@ Kolmogorov-Smirnov normality test, multiple regression, residual normality test,
 ![Residual diagnostics](spss_diagnostics.png)
 
 ## Files
-- `data/`: the `.sav` datasets
-- `output/`: PSPP/SPSS output files, numbered 1 to 7 (frequencies, t-tests, non-parametric tests, logistic regression, path analysis, multiple regression, assumption testing)
-- `images/`: charts used on the portfolio page
+- `*.sav`: the practice datasets (regression assumptions, multiple regression, binary logistic)
+- `1_` to `7_*.spv`: PSPP/SPSS output files (frequencies, t-tests, non-parametric tests, logistic regression, path analysis, multiple regression, assumption testing)
+- `spss_cover.png`, `spss_diagnostics.png`: charts used on the portfolio page
 
 ## Tools
 SPSS-compatible output created with GNU PSPP. Open `.sav` and `.spv` files in PSPP or SPSS.
